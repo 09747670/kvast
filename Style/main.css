@@ -77,7 +77,7 @@ header{
 
 .main{
     display: grid;
-    width: 1200px;
+    width: 100%;
     justify-content: center;
 
 }
@@ -85,46 +85,86 @@ header{
     text-transform: uppercase;
     font-size: 2vw;
     color: black;
-    float: left;
+    text-align: left;
 
 }
 .goods{
     display: grid;
-    width: 320px;
-border: 1px solid red;
+    width: 350px;
 }
 
 .goods__img{
     justify-items: start;
     position: absolute;
-    border: 1px solid #4ba7ff;
-
 }
 .goods__title{
     position: relative;
     justify-self: end;
-    width: 150px;
-    border: 1px solid #59ff24;
+    width: 160px;
 }
 .goods__title2{
-   margin-top: 350px;
-   position: relative;
-   align-self: end;
-
+   margin-top: 300px;
+   padding: 15px;
 }
+
 .goods__main{
     text-transform: uppercase;
     font-size: 2vw;
     color: black;
-    justify-content: start;
+    text-align: left;
 }
 .goods__bold{
     font-size: 1vw;
     color: black;
-    font-weight: bolder;
+    font-weight: bold;
     text-align: left;
+    word-spacing: 25px;
+    line-height: 1.6;
 }
 .goods__component{
     font-size: 1vw;
     text-align: left;
+    line-height: 1.6;
+}
+.goods__buttons{
+
+    display: grid;
+    grid-template-columns: 40% 30% 20%;
+}
+.goods__bold_price{
+    font-size: 1vw;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    justify-self: end;
+}
+.goods__buttons_detailed{
+    background-color: #ffffff;
+    color: #834700;
+    border: 1px solid #834700;
+    margin: 5px;
+    text-transform: uppercase;
+}
+.goods__buttons_buy{
+    background-color: #834700;
+    color: #ffffff;
+    border: none;
+    margin: 5px;
+    text-transform: uppercase;
+}
+.goods_{
+    display: grid;
+    grid-template-columns: 60% 60%;
+    justify-items: center;
+
+}
+.goods__buttons_detailed:hover {
+    color:orange;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.goods__buttons_buy:hover {
+    color:orange;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
